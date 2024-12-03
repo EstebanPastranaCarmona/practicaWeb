@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tienda Online</title>
+        <link rel="stylesheet" href="./Style/style.css">
+    </head>
+    <body>
+        <h1 id="title">Tienda Doña Pelos</h1>
+
+        <div class="articles">
+
+            <!--Cafe-->
+            <div class="article">
+                <div class="divImage">
+                   <img  class="articleImage" src="Assets/images/cafe.jpg"  alt="Imagen de Articulo"> 
+                </div>
+                <h3 class="articleName">Cafe</h3>
+                <h4 class="articlePrice">$ 200</h4>
+                <button class="buyButton"
+                        data-name="Cafe"
+                        data-price="200"
+                        data-id="1">
+                        Comprar</button>
+            </div>
+
+            <!--Pizza-->
+            <div class="article">
+                <div class="divImage">
+                    <img  class="articleImage" src="Assets/images/pizaa.jpg" alt="Imagen de Articulo">
+                </div>
+                <h3 class="articleName">Pizza</h3>
+                <h4 class="articlePrice">$ 300</h4>
+                <button class="buyButton"
+                        data-name="Pizaa"
+                        data-price="300"
+                        data-id="2">
+                        Comprar</button>
+            </div>
+
+            <!--Agua-->
+            <div class="article">
+                <div class="divImage">
+                    <img  class="articleImage" src="Assets/images/agua.jpg" alt="Imagen de Articulo">
+                </div>
+                <h3 class="articleName">Agua</h3>
+                <h4 class="articlePrice">$ 100</h4>
+                <button class="buyButton"  
+                        data-name="Agua"
+                        data-price="100"
+                        data-id="3">
+                        Comprar</button>
+            </div>
+
+            <!--Sandia-->
+            <div class="article">
+                <div class="divImage">
+                    <img  class="articleImage" src="Assets/images/sandia.jpg" alt="Imagen de Articulo">
+                </div>
+                <h3 class="articleName">Sandia</h3>
+                <h4 class="articlePrice">$ 50</h4>
+                <button class="buyButton"
+                        data-name="Sandia"
+                        data-price="50"
+                        data-id="4">
+                        Comprar</button>
+            </div>
+
+        </div>
+       
+        <div id="purchases">
+
+            <table>
+                <caption>Carrito de Compras</caption>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Item</th>
+                        <th>Cantidad</th>
+                        <th>Acción</th>
+                        <th>Total</th>
+                    </tr>                    
+                </thead>
+                <tbody id="cart">
+                </tbody>
+
+                <tfoot>
+                    <tr id="emptyPurchases">
+                        <td colspan="3">Carrito vacio - Comience a comprar</t>
+                    </tr>
+                </tfoot>
+            </table>
+
+        </div>
+        <script src="./JS/scripts.js"></script>
+    </body>
+</html>
