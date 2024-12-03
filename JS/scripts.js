@@ -87,7 +87,7 @@ function IncreaseAmount(row, price){
 
 function DecreaseAmount(row, price){
     const PriceCelda = row.cells[4]; 
-    let newTotal = parseInt(PriceCelda.textContent) + parseInt(price);
+    let newTotal = parseInt(PriceCelda.textContent) - parseInt(price);
     PriceCelda.textContent = String(newTotal);
 
     const cantidadCelda = row.cells[2]; 
