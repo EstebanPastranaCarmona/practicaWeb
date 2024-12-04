@@ -89,7 +89,7 @@ caption {
     margin-bottom: 15px;      
 }
 
-.deleteButton, .addButton{
+.deleteButton, .addButton, .deleteCartButton{
     color: white;
     border-radius: 5px;
     margin: 5px;
@@ -101,5 +101,11 @@ caption {
 
 .deleteButton{
     background-color: rgba(234, 35, 35, 0.97);
+}
+
+.deleteCartButton{
+    background-color:  red;
+    margin-top: 10px;
+    margin-left: 20px;
 }
 
